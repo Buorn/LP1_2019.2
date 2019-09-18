@@ -2,26 +2,20 @@
 
 int main(void){
 
-    char cadeia[25], matriz[3][10];
-    int i, j=0, k, cont, w;
+    char cadeia[]="bruno bandeira brandao";
+    int npalavra=1, n=0;
 
-    printf("Digite uma frase: ");
-    scanf("%s", cadeia);
-
-    for(i=0;i<25;i++){
-        cont=0;
-        while(cadeia[i] != " "){
-            cont++;
-        }
-        j++;
-        for(k=0;k<cont;k++){
-            matriz[j][k] = cadeia[i];
-        }
+    //calcula o numero de palavas e tamanho da frase
+    while(cadeia[n] != '\0'){     
+      if(cadeia[n] == ' '){
+        npalavra++;
+      }
+      n++;      
     }
-    for(w=0;w<3;w++){
-        printf("s% \n",matriz[w]);
-    }
-
-
+		
+		for(i=0;
+     
+    printf("%d \n",npalavra);
+    printf("%d \n",n);
 return 0;
 }
