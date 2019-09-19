@@ -44,7 +44,7 @@ int main()
     }
 
     for(i=0;i<=3;i++){
-            printf("%c", mat[i]);
+            printf("%s", mat[i]);
     }
 
 
