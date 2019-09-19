@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, j=0, n=0, col=0, lin=0, npalavra=0;
+    int i, j=0, n=0, col=0, lin=0, npalavra=0, cont=0;
     char s[]="bruno bandeira brandao", mat[3][10]={'\0'};
     //calcula tamanho da cadeia e o numero de palavras
     while(s[n] != '\0'){
@@ -26,7 +26,10 @@ int main()
     for(i=0;i<=3;i++){
         printf("%s", mat[i]);
     }
-
+    // conta numero de letras de cada string do vetor
+    for(i=0; i<=n; i++){
+        cont=0;
+      =0; i<=n; i++){
 
     return 0;
 }
