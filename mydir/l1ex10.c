@@ -44,9 +44,7 @@ int main()
     }
 
     for(i=0;i<=3;i++){
-        for(j=0;j<=10;j++){
-            printf("%c", mat[i][j]);
-        }
+            printf("%c", mat[i]);
     }
 
 
