@@ -27,7 +27,7 @@ return 0;
 int main()
 {
     int i, j, n=0, col=0, lin=0;
-    char s[]="bruno bandeira brandao", mat[3][10];
+    char s[]="bruno bandeira brandao", mat[3][10]={'\0'};
     
     while(s[n] != '\0'){
         n++;
