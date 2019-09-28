@@ -33,17 +33,18 @@ int main(void){
 		}
 
         for(i=0; i<5; i++){
-            if(aluno[i].media <= aluno[i+1].media){
-                strcpy(aux, aluno[i].nome);
-                strcpy(aluno[i].nome, aluno[i+1].nome);
-                strcpy(aluno[i+1].nome, aux);
+            for(j=i+1; j<5;j++){
+                if(aluno[i].media <= aluno[j].media){
+                    strcpy(aux, aluno[i].nome);
+                    strcpy(aluno[i].nome, aluno[j].nome);
+                    strcpy(aluno[j].nome, aux);
 
-                aux1 = aluno[i].media;
-                aluno[i].media = aluno[i+1].media;
-                aluno[i+1].media = aux1;
+                    aux1 = aluno[i].media;
+                    aluno[i].media = aluno[j].media;
+                    aluno[j].media = aux1;
+                }
             }
-        }
-		for(i=0; i<5; i++){
+        }		for(i=0; i<5; i++){
             media+=aluno[i].media;
 		}
 
