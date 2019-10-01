@@ -1,9 +1,10 @@
 #include <stdio.h>
+#define DIM 20
 
 int main(void)
 {
-    int cont, i, j, aux, DIM = 20;
-    char nome[DIM];
+    int cont, i, j, aux;
+    char nome[DIM]={'\0'};
 
     //Leitura da cadeia.
 
@@ -27,7 +28,7 @@ int main(void)
             aux++;
           }
         }
-        if(aux == i){
+        if((aux == i) && (nome[i] != '\0')){
             printf("Essa cadeia tem %d letras %c \n",cont, nome[i]);
         }
     }
